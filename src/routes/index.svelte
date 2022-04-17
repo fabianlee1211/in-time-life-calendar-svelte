@@ -10,10 +10,10 @@
 </script>
 
 <svelte:head>
-  <title>In Time - Lifespan Countdown Timer</title>
+  <title>In Time - Lifespan Countdown Timer and Calendar</title>
   <meta
     name="description"
-    content="A simple countdown timer starting from your birth date to the average human lifespan of 80 years later."
+    content="A lifespan countdown timer and calendar which starts from your birth date to the average human lifespan of 80 years later."
   />
 </svelte:head>
 <section class="px-3 md:px-6 my-8">
