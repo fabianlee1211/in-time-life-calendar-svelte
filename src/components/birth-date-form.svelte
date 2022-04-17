@@ -1,10 +1,10 @@
 <script lang="ts">
   import { format, subDays, subYears } from 'date-fns';
-  import { birthDate } from '../stores/store';
+  import { birthDate, defaultDateString } from '../stores/store';
   import { fade } from 'svelte/transition';
 
   let error = false;
-  let value = '';
+  let value = defaultDateString;
 
   const handleSubmit = () => {
     if (!value) {
