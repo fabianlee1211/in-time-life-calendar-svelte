@@ -53,21 +53,21 @@
   class="sticky py-4 top-0 bg-zinc-900 z-50 flex flex-col items-center"
   in:fade
 >
-  <p class="text-center mb-2">
+  <p class="text-center mb-2 text-digit">
     {`${formattedStart} - ${formattedEnd}`}
   </p>
   <div class="flex justify-center items-center">
     {#each Object.values(timeLeft) as time, index}
       <div class="flex items-center text-center justify-around">
         <p
-          class="text-neon neon-shadow text-3xl sm:text-5xl font-thin tabular-nums md:text-7xl tracking-tighter"
+          class="text-digit neon-shadow text-3xl sm:text-5xl font-thin tabular-nums md:text-7xl tracking-tighter"
         >
           {time}
         </p>
       </div>
       {#if index !== Object.values(timeLeft).length - 1}
         <span
-          class="mx-2 w-1 h-1 sm:h-2 sm:w-2 rounded-full bg-neon shadow-neon"
+          class="mx-2 w-1 h-1 sm:h-2 sm:w-2 rounded-full bg-digit shadow-neon"
         />
       {/if}
     {/each}

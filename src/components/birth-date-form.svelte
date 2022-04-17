@@ -48,7 +48,7 @@
       {/if}
     </div>
     <button
-      class="px-4 py-2 rounded-lg font-semibold border-neon bg-neon/50 border-2 cursor-pointer flex-shrink-0"
+      class="px-4 py-2 rounded-lg font-semibold border-green-500 bg-green-500 border-2 cursor-pointer flex-shrink-0"
       on:click={handleSubmit}>Start Now</button
     >
   </div>

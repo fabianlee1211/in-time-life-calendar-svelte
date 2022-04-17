@@ -15,7 +15,7 @@
     differenceInYears,
     add
   } from 'date-fns';
-  import Tile from './tile.svelte';
+  import Tile from './week-tile.svelte';
   import { birthDate } from '../stores/store';
   import { onDestroy } from 'svelte';
 

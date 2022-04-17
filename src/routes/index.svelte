@@ -6,7 +6,7 @@
   import Timer from '../components/timer.svelte';
   import { birthDate } from '../stores/store';
   import BirthDateForm from '../components/birth-date-form.svelte';
-  import Tiles from '../components/tiles.svelte';
+  import Calendar from '../components/calendar.svelte';
 </script>
 
 <svelte:head>
@@ -23,5 +23,5 @@
   {:else}
     <BirthDateForm />
   {/if}
-  <Tiles />
+  <Calendar />
 </section>

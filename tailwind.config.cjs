@@ -8,12 +8,12 @@ module.exports = {
         sans: ['Inter', ...fontFamily.sans]
       },
       colors: {
-        neon: 'hsl(160, 100%, 50%)'
+        digit: '#e4ffc3'
       },
       boxShadow: {
         neon: '0 0 10px hsla(160, 100%, 50%, 1)'
       }
     }
   },
-  plugins: []
+  plugins: [require('@tailwindcss/typography')]
 };

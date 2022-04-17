@@ -9,5 +9,5 @@ body {
 }
 
 .neon-shadow {
-  text-shadow: 0 0 7px #0fa, 0 0 10px #0fa, 0 0 21px #0fa;
+  text-shadow: 0 0 7px #0fa, 0 0 10px #00ff10, 0 0 21px #00ff9f;
 }
