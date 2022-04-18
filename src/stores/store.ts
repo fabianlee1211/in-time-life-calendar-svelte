@@ -6,10 +6,16 @@ const defaultDate = sub(new Date(), { days: 1 });
 export const defaultDateString = format(defaultDate, 'yyyy-LL-dd');
 
 const localStorageStore = (key, initial) => {
-  const stored = (browser && localStorage?.getItem(key)) || '';
+  const stored = browser ? localStorage?.getItem(key) : '';
 
   if (!stored) {
-    browser && localStorage?.setItem(key, initial);
+    if (browser) {
+      try {
+        localStorage?.setItem(key, initial);
+      } catch (e) {
+        console.error(e);
+      }
+    }
   }
 
   const store = writable(stored);
@@ -20,5 +26,11 @@ const localStorageStore = (key, initial) => {
 export const birthDate = localStorageStore('birthDate', '');
 
 birthDate.subscribe((value) => {
-  browser && localStorage?.setItem('birthDate', value);
+  if (browser) {
+    try {
+      localStorage?.setItem('birthDate', value);
+    } catch (e) {
+      console.error(e);
+    }
+  }
 });
