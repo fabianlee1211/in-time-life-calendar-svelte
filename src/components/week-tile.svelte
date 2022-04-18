@@ -11,7 +11,7 @@
     }`}
   >
     <div
-      class={`absolute left-0 top-0 bg-digit h-4 transition-all`}
+      class={`absolute left-0 top-0 bg-digit h-2 sm:h-4 transition-all`}
       style={`width: ${progress * 100}%`}
     />
   </div>
