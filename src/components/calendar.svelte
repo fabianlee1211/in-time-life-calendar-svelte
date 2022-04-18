@@ -58,10 +58,10 @@
   });
 </script>
 
-<div class="max-w-screen-2xl mx-auto overflow-x-auto my-8">
+<div class="max-w-screen-2xl mx-auto overflow-x-auto my-4 md:my-8">
   {#each years as year}
     <div
-      class={`grid grid-cols-1 xl:grid-cols-2 gap-2 xl:gap-12 mx-auto relative w-max ${
+      class={`grid grid-cols-1 xl:grid-cols-2  gap-1 sm:gap-2 xl:gap-12 mx-auto relative w-max ${
         year % 10 === 0 ? 'mb-10' : 'mb-2'
       }`}
     >
