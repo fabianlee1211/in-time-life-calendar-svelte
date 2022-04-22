@@ -74,6 +74,7 @@
   </div>
   <button
     on:click={() => birthDate.set('')}
-    class="underline mt-2 opacity-30 text-sm">Change Date</button
+    class="underline mt-2 text-sm hover:opacity-100 opacity-30 transition-opacity"
+    >Change Date</button
   >
 </div>

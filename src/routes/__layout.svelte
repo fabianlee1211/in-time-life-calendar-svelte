@@ -1,6 +1,7 @@
 <script>
   import '../app.css';
   import Nav from '../components/nav.svelte';
+  import Footer from '../components/footer.svelte';
 </script>
 
 <svelte:head>
@@ -14,3 +15,4 @@
 
 <Nav />
 <slot />
+<Footer />
