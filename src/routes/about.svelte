@@ -1,5 +1,6 @@
 <svelte:head>
   <title>About</title>
+  <meta name="description" content="About this project" />
 </svelte:head>
 
 <article class="mx-auto prose prose-invert my-14 px-6">

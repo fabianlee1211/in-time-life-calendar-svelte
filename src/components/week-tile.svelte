@@ -3,16 +3,24 @@
   export let progress = 0;
 </script>
 
-<div class="w-2 h-2 sm:w-4 sm:h-4 relative">
-  <p class="sr-only">{`Week ${week}`}</p>
-  <div
-    class={`w-full h-full relative border overflow-hidden ${
-      progress === 0 ? 'border-digit/20' : 'border-digit'
+<svg
+  class="w-2 h-2 sm:w-4 sm:h-4"
+  width="100%"
+  height="100%"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <rect
+    class="h-2 sm:h-4 stroke-digit fill-digit stroke-2 transition-all"
+    width={`${progress * 100}%`}
+    height="100%"
+    data-week={week}
+  />
+  <rect
+    class={`w-2 h-2 sm:h-4 sm:w-4 stroke-2 fill-transparent ${
+      progress === 0 ? 'stroke-digit/20' : 'stroke-digit'
     }`}
-  >
-    <div
-      class={`absolute left-0 top-0 bg-digit h-2 sm:h-4 transition-all`}
-      style={`width: ${progress * 100}%`}
-    />
-  </div>
-</div>
+    width="100%"
+    height="100%"
+    data-week={week}
+  />
+</svg>
